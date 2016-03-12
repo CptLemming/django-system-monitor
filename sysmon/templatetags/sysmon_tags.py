@@ -97,7 +97,7 @@ class SysMon(template.Node):
             try:
                 percent = process.get_memory_percent()
             except AccessDenied:
-                percent = "Access Denied"
+                percent = 0
             else:
                 percent = int(percent)
 
